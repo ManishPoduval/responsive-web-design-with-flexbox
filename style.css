@@ -1,17 +1,14 @@
+/* GENERAL RULES */
+
 body {
   font-family: rubik;
+  background-color: #ef5350;
 }
 
-.navbar {
-  /*add styles for the navbar here*/
-}
-
-.hamburger {
-  /*add styles for the hamburger here*/  
-}
-
-.container {
-  /*add styles for the container here*/
+ul, 
+li {
+  list-style: none;
+  margin-right: 0;
 }
 
 h1 {
@@ -20,49 +17,132 @@ h1 {
   font-size: 34px;
 }
 
+/* HEADER RULES */
+
+header {
+  width: 100%;
+}
+
+.headerImg {
+  width: 250px;
+  margin: 5px auto 20px auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* NAV RULES */
+
+.navbar {
+  background-color: #386bbb;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu {
+  color: white;
+  font-size: 20px;
+  margin: 0 25px;
+  display: flex;
+  flex-direction: row;
+}
+
+.menu li {
+  padding: 5px 10px;
+}
+
+.hamburger{
+  display: none;
+}
+
+/* CONTAINER RULES */
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
 #pokedex {
-  /*add styles for pokedex here*/
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  flex-wrap: wrap;
+  padding-left: 0;
 }
 
 .card {
+  width: 250px;
   padding: 5px;
   background-color: #fff;
   color: #222;
   margin:10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-title {
   font-size: 32px;
   font-weight: bold;
-  margin-top: 0;
+  text-align: center;
+  margin-bottom: 0;
 }
 .card-subtitle {
   margin-top: 5px;
   font-weight: lighter;
+  text-align: center;
+  color: #757575;
 }
 
 .card-image {
   height: 180px;
 }
 
-.menu {
-  /*add styles for the menu here*/
+/* FOOTER RULES */
+
+footer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-
-header {
-  /*add styles for the header here*/
+.social{
+  width: 30%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 0;
 }
 
-.headerImg {
-  /*add styles for the header image here*/
+.social_icon {
+  color: white;
 }
 
-.social {
-  /*add styles for the social icons here*/
-}
+@media (max-width :800px){
+  .navbar {
+    background-color: #386bbb;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
 
-footer {
-  /*add styles for the footer here*/
+  .hamburger{
+    height: 40px;
+    width: 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+  }
+
+  .menu {
+    display: none;
+  }
+  
+  
 }
 
