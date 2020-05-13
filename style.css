@@ -7,10 +7,13 @@ body {
 
 .navbar {
   background-color: #345feb;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .hamburger {
-  /*add styles for the hamburger here*/  
+  color: white;
+  padding: 5px 10px;
 }
 
 .container {
@@ -31,12 +34,13 @@ h1 {
   padding: 5px;
   background-color: #fff;
   color: #222;
-  margin:10px;
+  margin:16px;
   width: 250px;
-}
-
-p {
-  color: #757575
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-title {
@@ -47,6 +51,7 @@ p {
 .card-subtitle {
   margin-top: 5px;
   font-weight: lighter;
+  color: #757575
 }
 
 .card-image {
@@ -54,26 +59,43 @@ p {
 }
 
 .menu {
-  /*add styles for the menu here*/
+  list-style: none;
+  color: white;
+  
 }
 
-
 header {
-  /*add styles for the header here*/
+  display: flex;
+  justify-content: center;
 }
 
 .headerImg {
   width: 250px;
   display: flex;
-  justify-content: center;
 }
 
 .social {
-  /*add styles for the social icons here*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.social_icon {
+  list-style: none;
+  color: white;
+  margin: 0 20px;
+}
+
+.fab {
+  width: 50px;
 }
 
 footer {
-  /*add styles for the footer here*/
+  display: flex;
+  justify-content: center;
 }
 
-@media mobile(min-width: )
+@media larger than mobile (min-width: 768px) {
+  
+}
