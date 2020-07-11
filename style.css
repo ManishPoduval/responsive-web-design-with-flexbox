@@ -1,17 +1,83 @@
 body {
   font-family: rubik;
+  background-color:#ef5350;
+  margin:0;
 }
-
+header{
+  text-align: center;
+}
 .navbar {
-  /*add styles for the navbar here*/
+  background-color:#ef5350 ;
+  background-color:blue;
 }
-
+.menu{
+  display:flex;
+  justify-content: flex-end;
+  color:white;
+  margin-right:18px;
+}
+.menu li {
+  list-style:none;
+}
 .hamburger {
-  /*add styles for the hamburger here*/  
+  display: none;
+  color:white;
 }
+.menu > li {
+ margin-left:7.7px;
+}
+@media (max-width: 764px) {
+  .menu{
+    display:none;
+  }
+.hamburger{
+  display:block;
+  color:white;
+  margin-right:14px;
+}
+.navbar{
+  display:flex;
+  justify-content:flex-end;
+ }
+header{
+  text-align: center;
+}
+.container{
+display:flex;
+align-items:center;
+justify-content:column;
+}
+}
+/*Tablet*/
+@media (min-width: 765px) and (max-width:1024px) {
+  .menu{
+    display:none;
+  }
+  .navbar{
+    display:flex;
+    justify-content:flex-end;
+   }
+   .container{
+    display:flex;
+    align-items:center;
+    justify-content:column;
+    }
+    #pokedex {
+      display:flex;
+      flex-wrap:wrap;
+      justify-content: space-evenly;
+     }
+    .hamburger{
+      
+      display:block;
+      color:white;
+      margin-right:14px;
+      } 
+    } 
 
 .container {
-  /*add styles for the container here*/
+  display:flex;
+  justify-content:space-between;
 }
 
 h1 {
@@ -21,28 +87,47 @@ h1 {
 }
 
 #pokedex {
-  /*add styles for pokedex here*/
+ display:flex;
+ flex-wrap:wrap;
+ justify-content: space-evenly;
 }
 
 .card {
-  padding: 5px;
   background-color: #fff;
   color: #222;
+  border:1px solid black;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width:250px;
   margin:10px;
-}
 
+}
 .card-title {
   font-size: 32px;
   font-weight: bold;
   margin-top: 0;
+  color: #757575;
+  display:block;
 }
 .card-subtitle {
   margin-top: 5px;
   font-weight: lighter;
+  
 }
-
 .card-image {
   height: 180px;
+  width:309px;
+}
+
+@media (min-width: 769px){
+  .container{
+    background-color:red;
+    display:flex;
+    flex-direction:column;
+  }
+
 }
 
 .menu {
@@ -55,14 +140,22 @@ header {
 }
 
 .headerImg {
-  /*add styles for the header image here*/
+  
+}
+header img{
+  width: 250px;
 }
 
 .social {
-  /*add styles for the social icons here*/
+  display:flex;
+  justify-content:space-evenly;
+  color:white;
+}
+.social li{
+  list-style:none;
 }
 
 footer {
-  /*add styles for the footer here*/
+
 }
 
