@@ -1,13 +1,25 @@
 body {
   font-family: rubik;
+  background-color: #ef5350;
+  
 }
 
 .navbar {
   /*add styles for the navbar here*/
+  display:flex;
+  flex-direction:row-reverse;
+  justify-content:space-between;
+  background-color:#386BBB;
+  
 }
 
 .hamburger {
   /*add styles for the hamburger here*/  
+  display: none;
+  
+  margin:auto 0;
+  padding-right:10px;
+  color:white;
 }
 
 .container {
@@ -22,6 +34,13 @@ h1 {
 
 #pokedex {
   /*add styles for pokedex here*/
+  
+ display:flex;
+ justify-content:center;
+ flex-wrap:wrap;
+ 
+  
+
 }
 
 .card {
@@ -29,16 +48,22 @@ h1 {
   background-color: #fff;
   color: #222;
   margin:10px;
+  width:235px;
+  list-style-type: none;
+  text-align:center;
+  
 }
 
 .card-title {
   font-size: 32px;
   font-weight: bold;
   margin-top: 0;
+  
 }
 .card-subtitle {
   margin-top: 5px;
   font-weight: lighter;
+  color:#757575;
 }
 
 .card-image {
@@ -47,22 +72,67 @@ h1 {
 
 .menu {
   /*add styles for the menu here*/
+  display:flex;
+  color:white;
+  
+}
+.menu li {
+  list-style-type: none;
+  padding-left: 25px;
+  padding-right:10px;
 }
 
 
 header {
   /*add styles for the header here*/
+  display:flex;
+  justify-content:center;
 }
 
 .headerImg {
+  
   /*add styles for the header image here*/
+  width:250px;
+  margin-bottom:15px;
 }
 
 .social {
   /*add styles for the social icons here*/
+  width:600px;
+  display: flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+  
+
 }
 
 footer {
   /*add styles for the footer here*/
+  display: flex;
+  flex-direction:row;
+  justify-content:center;
+
+}
+
+footer li{
+  /*add styles for the footer here*/
+  
+  list-style-type: none;
+  color:white;
+ 
+}
+
+@media (max-width: 850px) {
+  
+  .hamburger {
+    display:block;
+  }
+  .menu li {
+    display:none;
+  }
+  .card {
+   
+  }
+ 
 }
 
